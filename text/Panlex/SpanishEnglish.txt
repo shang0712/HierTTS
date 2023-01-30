@@ -1,0 +1,224 @@
+MOS_0001|Ambiente ideal para tomar el vermú antes de comer.|es-9,en-6,es
+MOS_0002|¿No quiere añadir nada antes de que el jurado se retire?|es-49,en
+MOS_0003|Es una calle comercial del casco antiguo de la ciudad.|es
+MOS_0004|Pablo Flores Contreras es natural de Málaga y nació en la primavera de mil novecientos noventa y uno.|es-6,en-7,es-13,en-8,es
+MOS_0005|La vi hace dos meses en el Teatro Grand, en Woolwich.|es-34,en-7,es-3,en
+MOS_0006|Bella plaza e iglesia que deben visitar.|en-6,es
+MOS_0007|Ya no hay plazas libres en el Parking Plaza de Olavide.|en-3,es-27,en-8,es
+MOS_0008|No hay radios favoritas. Se reproducirá ciento cinco punto cero FM.|es
+MOS_0009|Lo siento, no hay resultados para Hotel Sheraton que cueste menos de treinta euros.|es-34,en-15,es
+MOS_0010|No se ha iniciado la radio. Por favor, active la radio primero.|es-39,en-7,es-3,en-6,es
+MOS_0011|Le regalo un caramelo de felicidad, y le deseo buen humor. ¡Feliz fiesta!|es-52,en-7,es
+MOS_0012|Se ha activado el control inteligente para la toma de aire del exterior interior.|es-18,en-8,es-37,en-9,es
+MOS_0013|Se ha desactivado el control inteligente para la toma de aire del exterior interior.|es-21,en-8,es-37,en-9,es
+MOS_0014|Para consultas generales sobre la actividad financiera en Banca Virtual, pulse tres.|es-58,en-21,es
+MOS_0015|Para cualquier consulta de su Banca Virtual, marque dos.|es-30,en-15,es
+MOS_0016|Como el epidemiólogo de enfermedades infecciosas Adam Kucharski nos recuerda en su oportuno libro The Rules of Contagion, publicado en febrero, la historia nos dice que las pandemias llevan a las comunidades a ser estigmatizadas, por lo que todos debemos tener más cuidado.|es-49,en-5,es-44,en-24,es-51,en-10,es
+MOS_0017|Nos metemos aún más en el mundo empresarial con branding, en español muchas veces traducido como marca personal.|es-48,en-10,es
+MOS_0018|El 'brainstorming es esa tormenta de ideas en realidad, de cerebros que muchas veces es la semilla de un gran proyecto.|es
+MOS_0019|Realmente me gusta el soundtrack de Ennio Morricone en Cinema Paradiso.|es-22,en-11,es-9,en-10,es-3,en-7,es
+MOS_0020|La Unión Europea y Londres aplazan 'sine die' la negociación 'postbrexit' por el coronavirus.|es-81,en
+MOS_0021|Yahr, la crítica de 'The Washington Post', invitaba en su análisis a no pasar por alto el título completo de la serie, 'Tiger King: asesinato, violencia y locura'.|es-20,en-16,es-90,en-6,es
+MOS_0022|Después de una sesión ya se nota un efecto 'flash' en la piel, pues se forman depósitos de ingredientes activos, lo que garantiza un buen aspecto de forma inmediata después del tratamiento y también una continua mejora de la piel a largo plazo.|es-120,en-10,es
+MOS_0023|La modelo californiana Kathy Jacobs, de cincuenta y seis años, se ha convertido en una de las seis finalistas para protagonizar la portada de la revista 'Sports Illustrated'.|es-23,en-14,es-116,en
+MOS_0024|Para terminar, la pareja tendrá acceso exclusivo al 'Private Wellness Spa' durante treinta minutos para brindar con cava y saborear de un tentempié en el 'jacuzzi'.|es-5,en-10,es-37,en-18,es-34,en-8,es
+MOS_0025|Hace quince años que la citada compañía se pone a disposición de las 'celebrities' para mimar su piel antes de la gran fiesta del cine del año, donde esta vez brillarán gracias al nuevo ritual Inhibit VI-Neck de Natura Bissé, el primer programa global para cuello y escote.|es-5,en-7,es-57,en-14,es-103,en-23,es
+MOS_0026|Inhibit Face and Neck-Lift: El 'lifting' de cabina definitivo para rostro, cuello y escote.|en-8,es-5,en-15,es
+MOS_0027|Según la intérprete de 'Only girl', este cosmético no solo aporta volumen y alarga las pestañas, sino que levanta, define y riza las pestañas.|es-23,en-6,es-47,en-7,es-32,en-7,es
+MOS_0028|La intérprete de 'Love Me Anyway' empieza a notar como el paso del tiempo deja huella en su rostro, un hecho que ha compartido con todos sus seguidores de Twitter: Carta a una misma; Querido yo, te estás haciendo mayor.|es-17,en-6,es-3,en-8,es-157,en-4,es-18,en
+MOS_0029|Entre ellos destaca: 'Foaming Face Wash', una espuma limpiadora infusionada con semilla de kiwi.|es-21,en-9,es
+MOS_0030|'Eye Cream', un contorno de ojos con té verde, cafeína, vitamina E y extractos de granada que ilumina, hidrata y reduce las ojeras; 'Vanilla Milk Toner', un tónico con aceite de aguacate y extracto de manzana para minimizar los poros; y 'Vitamin C Serum', el sérum iluminador.|es-113,en-7,es-21,en-13,es
+MOS_0031|La paleta de sombras que ha presentado la intérprete de 'Shallow' es la Glam Room Palette Número uno: Fame.|es-56,en-10,es-6,en-10,es
+MOS_0032|La expareja de Tom Cruise, que ha participado en una sesión gráfica para la edición australiana de 'Vogue', ha decidido compartir una de las instantáneas sin un solo retoque.|es-15,en-12,es
+MOS_0033|En una reciente entrevista a la revista 'Shape' Holmes admitía que se siente en uno de sus mejores momentos físicos.|es-40,en-15,es
+MOS_0034|Además, la nueva colección UVE BE BE incorpora un 'packaging' funcional y discreto.|es-27,en-4,es-19,en-12,es
+MOS_0035|La nueva propuesta se compone de un 'pack' que incluye las gafas mó rose diecinueve y un cordón a juego, ambos de edición limitada.|es-68,en-16,es
+MOS_0036|Katy Perry se ha sincerado esta semana con Smallzy's Surgery, un conocido programa de radio australiano, sobre cómo frena los efectos del envejecimiento en su cuerpo.|en-11,es-32,en-19,es-24,en-6,es
+MOS_0037|Entre las distintas propuestas destaca el Set Inhibit Collection, que incluye el tratamiento más revolucionario de la compañía.|es-46,en-20,es
+MOS_0038|Por este motivo, el ángel de Victoria's Secret ha decidido plantar cara y hacer un alegato para responder a los que le atacan por su físico tras ser madre de su segundo hijo.|es-29,en-18,es-12,en-8,es-29,en-10,es
+MOS_0039|Anteriormente las encargadas habían sido otras actrices como Margot Robbie, Kristen Stewart y Keira Knightley.|es-61,en-15,es-8,en-8,es-2,en
+MOS_0040|El WY ES EL Beauty Hotel abre sus puertas este fin de semana en Madrid.|es-3,en-3,es-6,en-13,es
+MOS_0041|Su corte de pelo es uno de los más vanguardistas del momento: lleva una melena por los hombros con corte recto y raya al lado como lucía años atrás la protagonista de 'La la Land', Emma Stone.|es-87,en-8,es-86,en
+MOS_0042|Miguel Álvarez nos recomienda Max Factor Lasting Performance Foundation.|es-7,en-8,es-15,en
+MOS_0043|Este 'smoothy' es una fórmula natural y saludable con activos rejuvenecedores, entre los que destacan la vitamina C, betacarotenos, el zinc y clorofila, entre otros.|es-30,en-8,es-104,en-11,es
+MOS_0044|La modelo y actriz, de veinticuatro años, sacrificó su lacia melena rubia para su papel en 'Life in a Year', la película en la que da vida a una joven con cáncer.|es-91,en-9,es-2,en-7,es-25,en-5,es
+MOS_0045|El pasado domingo, Delevingne presumió de su cabeza rapada en los premios EM TI VI Movie Awards, pero además de su nuevo 'look' añadió un tatuaje con motivos geométricos e inspiración floral, justo encima de la nuca.|es-10,en-20,es-53,en-14,es-87,en-8,es
+MOS_0046|Sheryl Sandberg reconoció que Facebook había sido muy lento para detectar la propaganda extranjera.|en-7,es-70,en-11,es
+MOS_0047|A cambio de que descargaran la aplicación Research, disponible fuera de la App Store, y concedieran acceso a todos sus datos, siguiendo el sistema de los certificados que permiten a las empresas recoger todos los datos almacenados en los 'smartphones' que sus empleados utilizan para el trabajo.|es-42,en-10,es-23,en-4,es-159,en-14,es
+MOS_0048|En este caso, Apple también canceló Screenwise Meter, que era la 'app' utilizada por Google también para recopilar datos de los usuarios.|es-14,en-6,es-16,en-18,es-31,en-7,es
+MOS_0049|Prueba de treinta días de Microsoft Office sin licencia de Office.|es-26,en-17,es-16,en
+MOS_0050|Desafortunadamente, los hombres con los que quedaba me estaban utilizando para clases de golf, equipo de golf y pelotas de golf, contó Paige Spiranac en su podcast 'Playing-A'Round'.|es-105,en-5,es-25,en-6,es-15,en
+MOS_0051|Dell Mobile Connect no está disponible en el modo S de Windows diez.|es-5,en-15,es-35,en-8,es
+MOS_0052|El nuevo estudio, publicado en el 'Journal of Geophysical Research: Space Physics', utiliza más de dieciocho años de datos de la misión 'Cluster' de la ESA.|es-34,en-50,es
+MOS_0053|Empieza a mirar Guardian: The Lonely and Great God ahora.|es-16,en-31,es
+MOS_0054|The Universe's Star fue escrita por Kim Ji Hyun.|en-20,es-16,en-4,es
+MOS_0055|Como I'll Go To You When The Weather Is Nice se acerca a su fin, un montón de cosas se están enlazando.|es-5,en-40,es-15,en-5,es
+MOS_0056|La innovación más significativa del producto es la incorporación de la tecnología ToF Time of Flight.|es-82,en
+MOS_0057|El software de la cámara principal incluye también Google Lens.|es-3,en-9,es-13,en-10,es-16,en
+MOS_0058|La marca no solo ha presentado un nuevo vehículo, sino que también ha mostrado la propuesta cinco G Connected Car y ha anunciado la creación del 'software house', con cien especialistas para adaptar las soluciones de transformación digital del Grupo Volkswagen, mediante la digitalización de procesos.|es-100,en-14,es-31,en-18,es-28,en-8,es-33,en-8,es-10,en-12,es
+MOS_0059|La marca ha anunciado su primer móvil cinco GE y el Oppo cinco GE Landing Project.|es-66,en
+MOS_0060|Me gustaría saludar a los pingüinos o tener algunas experiencias peligrosas, pero atractivas, como en 'National Geographic'.|es-102,en
+MOS_0061|La segunda novedad de la marca ha sido un terminal de gama media, el Blade uve nueve.|es-42,en-9,es-3,en-5,es-10,en-6,es
+MOS_0062|Joy of Life está basado en una novela de viajes en el tiempo.|en-7,es
+MOS_0063|Under the Power es un drama de investigación ligero.|en-16,es-6,en-6,es
+MOS_0064|Alrededor de una de cada seis 'start-ups' que participan en el salón 'Four Years From Now' cuatro Y GRIEGA EFE ENE, que este miércoles ha celebrado su último jornada, ya participaron en el mismo el año pasado o en anteriores ediciones.|es-30,en-12,es-4,en-11,es-12,en-22,es-20,en-5,es
+MOS_0065|En el segundo acto se habló sobre comunicación y democracia, de cómo las redes sociales y otros generadores de algoritmos pueden promocionar informaciones falsas o 'fake news'.|es-49,en-12,es-109,en
+MOS_0066|Explicó Jason Yu, gerente general de Kantar Worldpanel en China.|es-8,en-10,es-8,en-8,es-10,en-11,es
+MOS_0067|Y Daily Essentials, programación de noticias y estilo de vida de forma rápida consejos guiados por personajes famosos.|es-2,en-18,es-37,en-5,es
+MOS_0068|The First Half of My Life desarrolla mucho al personaje de la protagonista femenina.|en-21,es
+MOS_0069|Acotó Jiang Hao, socio mundial de la consultora Roland Berger.|es-6,en-11,es-38,en
+MOS_0070|A Little Reunion cuenta la historia de tres familias cuya forma de cuidar a sus hijos difiere.|es-2,en-15,es
+MOS_0071|Ni Days, de Tsai Ming-Liang, ni First cow, de Kelly Reichardt, aparecieron.|es-3,en-6,es-8,en-12,es-3,en-11,es-3,en-17,es
+MOS_0072|El documental 'Circus of books' de Netflix recupera la increíble historia de la madre a la que le costó asimilar que su hijo fuera gay.|es-22,en-10,es-99,en
+MOS_0073|Rachel Mason, la directora de este delicado prodigio 'hardcore' con aspecto de documental familiar, creció convencida de que sus padres regentaban una librería.|en-14,es-3,en-10,es-63,en-10,es
+MOS_0074|Entre ellas, la más que sólo célebre 'Hustler'.|es
+MOS_0075|Después a producir ellos mismos películas como 'Stryker force' vuelvan a mirar en Google.|es-47,en-16,es-19,en
+MOS_0076|Y no es tanto 'spoiler' como motor obvio y auténtico sentido de la película.|es-35,en-6,es
+MOS_0077|Como nos gustó tanto vimos el documental que le hicieron, Soul of America, y ahí fue donde nos enamoramos de este artista.|es-63,en-12,es
+MOS_0078|Hace unos años murió dejándonos cuatro álbumes, pero el que os recomiendo sobre todo es el de No time for dreaming.|es-97,en
+MOS_0079|En la primera, 'Patients' un éxito en su país con casi un millón y medio de entradas vendidas, contaba la parte más evidentemente melodramática de su vida.|es-15,en-11,es
+MOS_0080|Según The Hollywood Reporter, ya han perdido la vida cuatro personas por COVID-diecinueve.|es-6,en-24,es-18,en-5,es-20,en
+MOS_0081|Las estrellas protagonizarán Killers of the Flower Moon, una de las películas más esperadas del año que viene.|es-29,en-28,es
+MOS_0082|La plataforma española de cine online que resiste frente a Goliats como Netflix, Amazon, HBO, Movistar o Disney, que una crisis sanitaria mundial sin precedentes como la actual supondría un momento dulce.|es-31,en-7,es-43,en-13,es-27,en-7,es-70,en
+MOS_0083|Además, pasar un rato en compañía de James Stewart y Grace Kelly siempre es buena idea.|es-37,en-14,es-2,en-12,es-17,en
+MOS_0084|Armando Iannucci vuelve al laberinto de la estupidez humana que tan bien recreara en In the loop.|en-17,es-10,en-10,es-36,en-9,es-3,en-7,es
+MOS_0085|Piezas publicadas en las últimas décadas en The New Yorker y en The New York Review of Books y pone la diana en escritores, pintores o fotógrafos.|es-44,en-15,es-5,en-8,es-5,en-16,es-10,en-6,es
+MOS_0086|Hay que sumarle la reciente Steps, sobre una relación que se va a pique.|es-28,en-7,es
+MOS_0087|Existe algo perverso en enfrentar al actor de Harry Potter, Daniel Radcliffe, al aquelarre por fuerza obsceno y algo más que violento de su más íntima impostura.|es-37,en-6,es-3,en-32,es
+MOS_0088|Lo que sigue es la versión hardcore de Ready Player One.|es-39,en
+MOS_0089|Predomina el ambient digital, perfecto para estos días de reclusión.|en-10,es
+MOS_0090|Werner Herzog presenta el documental Nomad: In the Footsteps of Bruce Chatwin, un retrato que rinde homenaje a su amigo Chatwin, el escritor y aventurero, al que el sida se llevó en mil novecientos ochenta y nueve.|es-44,en-35,es-41,en-9,es-14,en-12,es
+MOS_0091|El cierre correrá a cargo del debut de David Moragas con A Stormy Night, sobre un inesperado encierro en Nueva York.|es-20,en-6,es-4,en-6,es-3,en-6,es-21,en-7,es-38,en
+MOS_0092|Bob Hoskins está sublime como gánster en apuros, bien secundado por la gran Helen Mirren y el veteranísimo Eddie Constantine.|en-12,es-64,en-6,es-25,en
+MOS_0093|Con unos efectos especiales, siendo generosos, cutres, y un guion que podría haber escrito un niño de cuatro años, sigue la estela de sagas como Halloween o Viernes trece.|es
+MOS_0094|Sus créditos en la televisión incluyen la cinta para la pequeña pantalla 'Shadow Lake' mil novecientos noventa y nueve.|es-73,en-14,es
+MOS_0095|Fue muy querida y sus dos hijos Barnaby y Lottie, y sus nietos Daisy, Oscar, Olive y Toby la echarán mucho de menos.|es-32,en-8,es-2,en-8,es-13,en-20,es-2,en-5,es
+MOS_0096|Entre las apariciones teatrales, la familia incluyó en la nota sus trabajos en The Sound of Music Sonrisas y lágrimas, My Fair Lady y Cabaret.|es-79,en-19,es-21,en-13,es
+MOS_0097|En realidad, una se llama de verdad 'Virus', la india, la que se ve en Amazon Prime, y la otra 'The flu' la gripe, la coreana, la que se ve en Netflix.|es-71,en-14,es-10,en-10,es-3,en-7,es-3,en-9,es
+MOS_0098|Está disponible sin coste alguno Monument Valley dos, secuela del popular título para plataformas móviles.|es-33,en-16,es-17,en-8,es
+MOS_0099|Desde Square Enix ofrecen, solamente por tiempo limitado, Lara Croft GO gratis para iOS y Android.|es-6,en-7,es-45,en-14,es-12,en-4,es
+MOS_0100|Días atrás ya habían regalado otros dos títulos protagonizados por la famosa arqueóloga, Lara Croft and the Temple of Osiris y Tomb Raider, para la plataforma Steam.|es-89,en-29,es-9,en-13,es-19,en
+MOS_0101|Los que tienen talento sobreviven -y a duras penas- pero los one hit wonders siguen ahí, buscando una nueva oportunidad que no va a llegar.|es-61,en-16,es
+MOS_0102|En el proyecto están implicados los creadores de la producción original, David Crane y Marta Kauffman.|es-63,en-22,es-8,en
+MOS_0103|La actriz hizo estas declaraciones en Hiking With Kevin, una serie web del humorista Kevin Nealon.|es-38,en-12,es-35,en-6,es
+MOS_0104|El 'reboot' de Gossip Girl sigue adelante.|es-15,en-7,es
+MOS_0105|En su primer episodio se presenta a Rick Grimes Andrew Lincoln, un oficial de policía que despierta de un coma y se topa con un mundo postapocalíptico.|es-36,en-19,es
+MOS_0106|HBO ha anunciado que está preparando una adaptación en forma de serie del videojuego The Last of Us.|es-85,en
+MOS_0107|Los encargados de la ficción son Craig Mazin, creador de Chernobyl, y Neil Druckmann, director creativo y guionista del título original.|es-33,en-13,es-11,en-11,es-2,en-5,es-11,en-9,es-32,en
+MOS_0108|El proyecto será una coproducción con Sony Pictures Television y la primera serie de PlayStation Productions.|es-38,en-25,es-22,en
+MOS_0109|El pasado veintiséis de febrero la presentó en televisión con una actuación en The Tonight Show Starring Jimmy Fallon.|es-79,en-32,es
+MOS_0110|Por otra parte, Doja Cat cuenta con una canción, Boss Bitch, dentro de la banda sonora original de la película Birds of Prey.|es-16,en-9,es-24,en-12,es-26,en-9,es-21,en
+MOS_0111|El impacto de esta composición también logró que su disco debut, Amala, apareciera en la lista oficial de álbumes de Billboard.|es-58,en-14,es-45,en
+MOS_0112|Lo hizo en Weibo, una plataforma muy popular en China y similar a Twitter.|es-11,en-7,es-19,en-8,es-3,en-6,es-2,en-8,es
+MOS_0113|Lo sucedido provocó que un 'hashtag' que animaba a boicotear Mulán se convirtiera en 'trending topic' en Twitter y que la intérprete recibiera un aluvión de críticas.|es-41,en-8,es-46,en-7,es
+MOS_0114|Project Luminous era el nombre en clave con el cual se hablaba de un proyecto que abre una nueva era centrada en los jedi y que han bautizado como Star Wars: The High Republic.|en-17,es-130,en
+MOS_0115|El ocho de septiembre llegará A Test of Courage, de Justina Ireland, orientada a un público más joven.|es-32,en-17,es-11,en-9,es
+MOS_0116|El trece de octubre se publicará Into the Dark, de Claudia Gray.|es-33,en-15,es-3,en
+MOS_0117|The Big Bang Theory terminó en mayo de dos mil diecinueve, pero sus fans pueden seguir disfrutando de las aventuras de uno de sus personajes en su 'spin-off'.|en-8,es-5,en-7,es-27,en-12,es-9,en-5,es
+MOS_0118|Una tendrá como protagonista al maestro Obi-Wan Kenobi y en ella el actor Ewan McGregor retomará su papel.|es-48,en-7,es-13,en-6,es-5,en-9,es
+MOS_0119|En el clip suena You're Gonna Miss This de Trace Adkins.|es-17,en-7,es-6,en-10,es-3,en
+MOS_0120|Peaky Blinders es una de las mejores series de los últimos tiempos.|en-15,es-22,en-7,es
+MOS_0121|Se trata de Captain Tsubasa: Rise of New Champions, un simulador de fútbol basado en el popular manga y anime que se convirtió en todo un fenómeno internacional.|es-12,en-8,es-14,en-18,es-36,en-8,es-8,en-6,es
+MOS_0122|Su estreno está previsto para el dos mil veinte y llegará a Nintendo Switch, PlayStation cuatro y PC.|es-69,en-20,es
+MOS_0123|Lewis lo hizo junto a la frase rosas entre dos espinas.|en-6,es
+MOS_0124|Del mismo modo que Google tiene Stadia, Microsoft tiene XCloud, su tecnología para jugar a videojuegos por streaming.|es-19,en-7,es-14,en-10,es-6,en-8,es-43,en
+MOS_0125|Ya se han emitido en The CI DOUBLE U las tres primeras entregas de Crisis en Tierras Infinitas, el nuevo 'crossover' de las series de superhéroes de DI CI.|en-3,es-18,en-14,es-32,en-7,es-31,en-12,es-7,en-7,es-21,en
+MOS_0126|El grupo EXO estrenó el miércoles veintisiete de noviembre su nuevo single, Obsession.|es-68,en
+MOS_0127|El diecinueve de abril, se lanzó un remake de Evergreen por veinticuatro equipos de treinta y cuatro cantantes.|es-3,en-11,es-22,en-7,es-3,en-10,es
+MOS_0128|En su post de Facebook la actriz le recordaba a la protagonista de 'Black Sawn' que solo había trabajado con dos directoras en su carrera y una de ellas ha sido ella misma.|es-6,en-5,es-25,en-10,es-21,en-13,es
+MOS_0129|Esos apellidos, de los que casi no se ha hablado son los de 'Little Women '-; Lulu Wang -directora de 'The Farewell'-; Lorene Scafaria -directora de 'Hustlers'-…|es-60,en-14,es-4,en-10,es-14,en-5,es-12,en-7,es
+MOS_0130|De ser así, nacería una generación que muchos ya han denominado los 'Corona Boomers'.|es
+MOS_0131|Los Rolling Stones tocando cada uno desde su casa por Zoom You can't always get what you want.|es-54,en
+MOS_0132|Taylor Swift, muy íntima al piano, interpretando Soon you'll get better.|en-14,es-14,en-7,es-14,en
+MOS_0133|Stevie Wonder homenajeando a Bill Withers con Lean on me.|en-14,es-15,en-13,es-4,en
+MOS_0134|El video fue lanzado bajo el título Singing 'Evergreen' nuevamente dos mil veinte, para los profesionales médicos de todo el mundo que luchan contra el COVID-diecinueve.|es-3,en-6,es-27,en-8,es-108,en
+MOS_0135|Aplica la crema hidratante ultra rica The Cream de Augustinus Bader.|es-33,en-15,es-3,en-11,es
+MOS_0136|Sabemos qué básicos utiliza Rosie Huntington Whiteley para presumir de piel bonita.|es-34,en-20,es
+MOS_0137|Así funciona el limpiador exfoliante y rejuvenecedor Cleansing Complex de Is Clinical.|es-53,en-18,es-3,en
+MOS_0138|Pues bien, con la actual crisis sanitaria, y las posibles consecuencias económicas, las compras de belleza no se han paralizado, incluso, aseguran en The Business of Fashion, han aumentado en Estados Unidos.|es-25,en-7,es-118,en-25,es
+MOS_0139|Uno de ellos: las pestañas postizas Witches and Wizards de Elegant Lashes.|es-36,en-20,es-3,en
+MOS_0140|En la web de Sephora el producto de maquillaje más vendido es el corrector de ojeras de Tarte, la marca que se ha posicionado como una de las más deseadas de las millennials.|es-65,en-10,es-87,en
+MOS_0141|En segunda y tercera posición el maquillaje filtro perfeccionador Hollywood de Charlotte Tilbury y la paleta de coloretes, bronceadores e iluminadores Cheek Starts Reunion Tourde de Benefit.|es-66,en-10,es-3,en-18,es-15,en-11,es-28,en-21,es
+MOS_0142|En Amazon, el primer puesto lo ocupa el maquillaje NYX Profesional en spray, junto con el agua mincelar SkinActive de Garnier y toallitas desmaquillantes.|es-3,en-8,es-40,en-4,es-15,en-7,es-27,en-11,es-13,en-10,es
+MOS_0143|El set completo que ahora se vende online en miriamquevedo punto com, consta de un Champú Imperial Smoothing Shampoosin sulfatos de cien milímetros; un acondicionador o Conditioner Balm y un sérum reestructurante o Restructuring luxe Serum, también los dos de cien mililitros.|es-35,en-7,es-23,en-5,es-20,en-30,es-49,en-17,es-29,en-14,es-5,en-7,es
+MOS_0144|Después aplico el acondicionador Extreme Caviar Conditioner Balm sobre el cabello y cuero cabelludo, lo masajeo y dejo actuar un par de horas, envolviendo todo el pelo con film transparente.|es-33,en-8,es-7,en-17,es-107,en-5,es
+MOS_0145|Por último, desenredo mi cabello con un peine de púas muy anchas de Dyson.|es
+MOS_0146|Envase, bote con el gel de coloración temporal de Christophe Robin y cepillito aplicador.|en-8,es-53,en-6,es
+MOS_0147|Y unos días después, Fanning sorprendía con el pelo rosa en su Instagram Stories.|es-21,en-8,es-23,en-5,es-6,en
+MOS_0148|Entre sorbos de café exprés y música de Talking Heads y The Beatles.|es-40,en-14,es-2,en-4,es
+MOS_0149|A la hora de crear combinaciones, las chicas más sabias del panorama fashion nos dan ideas.|es-69,en-8,es
+MOS_0150|De haberla conseguido presume la marca EQUIS Karla, creada por la estilista de celebrities Karla Welch.|es-22,en-8,es-15,en-7,es-27,en-18,es
+MOS_0151|El veintitrés de abril, el medio de noticias Silgan Sports informó de que Cha Eun Woo ha sido elegido como el protagonista masculino de un drama basado en el popular webtoon True Beauty.|es-52,en-7,es-15,en-12,es-53,en-6,es-13,en
+MOS_0152|El exitoso drama de JEY TI BI CI The World of the Married ha decidido calificar sus próximos episodios como mayores de diecinueve dieciocho en edad internacional.|es-3,en-14,es-3,en-4,es-6,en-28,es-61,en-11,es
+MOS_0153|En su etapa al frente del gestor del sistema eléctrico, la empresa duplicó su valor en Bolsa.|es
+MOS_0154|Locsin expresó su profunda gratitud e indicó que reportará la buena noticia al presidente Duterte lo antes posible.|es-68,en-8,es
+MOS_0155|Hay consumidores que no compraban 'online' y que han empezado a hacerlo y que es posible que repitan durante el confinamiento.|es-24,en-10,es
+MOS_0156|China continuará dando toda la asistencia posible dentro de sus capacidades a la lucha internacional contra la pandemia.|en-6,es
+MOS_0157|La cumbre es un primer paso de la respuesta del grupo ante la crisis.|es
+MOS_0158|Por poner algún ejemplo conocido, en febrero y marzo hemos podido ver uniéndose a esta red social a celebridades como Kendall Jenner, Bella Hadid, Paco León o Álex Rodríguez, que en su cuarto vídeo se marcó un viral con su 'Flip the Switch', en combo con su mujer Jennifer López.|es-87,en-11,es-20,en-29,es-5,en-5,es-53,en-6,es-7,en-19,es-3,en-6,es-13,en-9,es
+MOS_0159|La estrategia de esta marca se basa en lanzar nuevos productos cada año con los que ha obtenido certificaciones tecnológicas tan punteras como Sony ELE DE A CE, Bluetooth BE QU BE, Japanese Audio Association Hi-Res, Microsoft's HACHE DE CE DE, Dolby Laboratories' Dolby Digital, DE TE ESE y DE VE DE, SACD, licencias de patentes de CE DE, entre otras.|es-143,en-9,es-5,en-14,es-6,en-51,es-9,en-3,es-10,en-14,es-6,en-9,es-53,en-3,es
+MOS_0160|La compañía ya ha firmado el primer acuerdo con el grupo Hotusa, al que pertenece la cadena Eurostar.|es-57,en-8,es
+MOS_0161|El presidente estadounidense, Donald Trump, declaró el viernes una emergencia nacional debido al coronavirus.|es-30,en-14,es-53,en
+MOS_0162|En Italia hay tres PIB Producto Interior Bruto, uno oficial de un billón seiscientos mil millones de euros.|es-32,en-9,es
+MOS_0163|Esta vez, sin embargo, Sánchez pronunció un discurso de más de media hora destinado a un país en 'shock', sin ninguna nueva decisión que transmitir.|es-23,en-8,es-32,en-6,es
+MOS_0164|Takayuki Sugimoto, presidente de Nidec Shibaura Zhejiang, ha estado trabajando en China durante dos años.|en-19,es-14,en-25,es-24,en-6,es
+MOS_0165|El rebote iniciado el martes por las bolsas mundiales se ha mantenido este miércoles, aunque más moderado, gracias al 'plan Trump', el programa de estímulo económico diseñado por la Casa Blanca que ha sido aprobado por el Senado de Estados Unidos en la madrugada de este miércoles.|es-22,en-7,es-95,en-8,es
+MOS_0166|También es importante tener en cuenta que está la Semana Santa de por medio.|es-57,en-6,es
+MOS_0167|La creación de Alena Smith guionista de 'The newsroom' y 'The affair' no es un estricto drama de época, sino una comedia amarga e irreverente que subraya la modernidad del personaje una al parecer excelente Hailee Steinfeld a través de temas pop actuales o tacos muy de ahora.|es-15,en-12,es-13,en-15,es-2,en-13,es-18,en-6,es-52,en-8,es-53,en-17,es-33,en-6,es
+MOS_0168|Así lo dio a conocer Carlos Hank González, el presidente del Consejo de Administración de Grupo Financiero Banorte.|es-21,en-12,es
+MOS_0169|Pero hoy en día, es una parte integral de la cadena de suministro global.|es-30,en-9,es
+MOS_0170|Para superar la crisis, dijo Dudenhoeffer, sería importante aprender de la experiencia de China.|es-16,en-8,es-5,en-14,es
+MOS_0171|Antonio Rueda, por su parte, se decanta por confiar la respuesta al Fondo Monetario Internacional en primera instancia.|en-8,es
+MOS_0172|El 'president' ha pedido aparcar la bronca política y dedicar esfuerzos a parar el golpe coronavirus.|es-3,en-12,es-74,en
+MOS_0173|Cubierta la cuota infantil con 'Snoopy en el espacio' o 'Helpsters', Apple TI VI plus buscará al público juvenil con este acercamiento inusual a la figura de Emily Dickinson.|es-31,en-8,es-17,en-19,es-30,en-8,es-22,en-8,es-15,en
+MOS_0174|La ley que acaba de activar Trump tiene un papel protagonista en la tercera temporada de la serie de Netflix House of Cards, cuyo protagonista, el presidente Frank Underwood, la invoca para desviar fondos de FEMA a su plan para el pleno empleo, America Works.|es-28,en-6,es-75,en-16,es-33,en-17,es-3,en-7,es-23,en-5,es-5,en-5,es-22,en
+MOS_0175|Las exportaciones siguen condicionadas por la guerra comercial entre China y Estados Unidos.|es-69,en-6,es
+MOS_0176|A principios de febrero, Macy's anunció que cerraría ciento veinticinco grandes almacenes y despediría a dos mil empleados corporativos en medio de una caída en sus ganancias e ingresos.|es-25,en-7,es
+MOS_0177|Para la toma de decisiones, acuden a 'FaceTime', que permite mantener videollamadas al instante entre varios usuarios.|es-37,en-12,es
+MOS_0178|Pero en el medio-largo plazo la irrupción del Covid-diecinueve marcará igualmente un punto de inflexión.|es-46,en-17,es
+MOS_0179|Desde el pasado lunes veintitrés de marzo se pueden consultar ya los datos fiscales desde cualquier dispositivo, ordenador, tableta o 'smartphone', obtener el número de referencia y suscribirse a la 'app' Agencia Tributaria.|es-52,en-10,es
+MOS_0180|También ha anunciado el banco central la compra de valores respaldados por los mercados hipotecarios.|es-30,en-8,es
+MOS_0181|Además, los consumidores están concentrando sus compras en un único punto y el comercio tradicional ha reducido las ventas, mientras que los supermercados y la venta 'online' se ha incrementado, según los datos de Nielsen.|es
+MOS_0182|Estaría en un segundo plano porque lo esencial es cocinar la tortilla para que los países puedan alimentarse.|es
+MOS_0183|Nació en Madrid en mil novecientos cincuenta y uno y cursó los estudios de 'Director de Empresas Turísticas' por la Escuela Oficial de Turismo de Madrid.|es-75,en-10,es
+MOS_0184|Hacer un marco fiscal de mediano plazo, actualizado, nuevo.|es-15,en-7,es
+MOS_0185|Las medidas y métodos de China fueron impresionantes, dijo Nicholas Platt, ex diplomático estadounidense.|es-25,en-6,es-28,en-16,es
+MOS_0186|Se trata del primer chino en ser elegido director general de la FAO.|es-20,en-6,es-15,en-17,es
+MOS_0187|Hacerlo conllevará también tener que prescindir de personal y presentar un ERE temporal.|es-37,en-11,es-3,en-9,es-15,en-4,es
+MOS_0188|A partir del quince de abril, el instituto aplicará tres medidas para el apoyo a los trabajadores.|es-13,en-7,es
+MOS_0189|Antes de la reunión, Abdullah se reunió con su homólogo sirio, Walid al-Moallem.|es-21,en-9,es-26,en-7,es
+MOS_0190|La CAN es un organismo de integración económica regional conformado por Bolivia, Colombia, Ecuador y Perú.|es-3,en-4,es-41,en-9,es-15,en-27,es
+MOS_0191|Al cierre de la jornada financiera del lunes, el índice Dow Jones perdía doce coma noventa y tres por ciento, el Standard and Poor's quinientos, un once coma noventa y ocho por ciento y el Nasdaq, un doce coma treinta y dos por ciento.|es-56,en-10,es-36,en-8,es-3,en-20,es-15,en-5,es-36,en-8,es
+MOS_0192|Entre tanto, en Europa, las principales bolsas cerraron al alza el viernes, tras la debacle del jueves.|es-84,en-8,es
+MOS_0193|Hasina se encuentra de visita oficial en China, del tres al cinco de julio.|en-7,es-34,en-7,es
+MOS_0194|La Bolsa suspendió sus operaciones por treinta minutos mediante el mecanismo circuit breaker.|es-3,en-6,es-68,en
+MOS_0195|Desde el Gobierno también empiezan a tener claro que este será el único modelo viable de forma temporal.|es-79,en-7,es
+MOS_0196|Es el primer cargamento organizado por la empresa Basic Devices SL para la Generalitat de Catalunya.|es-50,en-14,es
+MOS_0197|El carbón de Mongolia Interior, Shanxi y Shaanxi llegará a la región central de China.|es-13,en-26,es-2,en-8,es-20,en-8,es
+MOS_0198|El virus no destruirá Europa, pero nuestro egoísmo puede que sí, amenazó el ex vicecanciller Sigmar Gabriel.|es-3,en-6,es-70,en-21,es
+MOS_0199|Escribió ayer Iglesias en Twitter, después de la rueda de prensa telemática posterior el Consejo de Ministros extraordinario.|es-26,en-9,es
+MOS_0200|Sin embargo, las empresas deben seguir estrictamente las normas de prevención y control epidémico.|es-80,en-8,es
+MOS_0201|Esto es, aquellos usuarios que han acordado una tarifa mensual con la compañía y no se rigen por el precio del 'pool' eléctrico.|es
+MOS_0202|El gobierno chino tiene una hoja de ruta clara para promover la industria, agregó.|es-12,en-6,es-23,en-6,es-5,en-9,es-3,en-11,es
+MOS_0203|Isabel Díaz Ayuso ha escrito en su cuenta de Twitter que la región será beneficiaria de una donación.|es-72,en-13,es
+MOS_0204|Es cien por ciento perfecto, dijo Trump durante una entrevista telefónica con Fox Business Network.|es-34,en-6,es-38,en
+MOS_0205|El índice Standard & Poor's quinientos subió veintiocho coma veintitrés puntos, o uno coma quince por ciento, para ubicarse en dos mil cuatrocientas setenta y cinco coma cincuenta y seis unidades.|es-10,en-9,es-2,en-7,es-63,en-7,es-4,en-8,es
+MOS_0206|También advirtió al ge veinte de cometer un error histórico irreversible debido a la miopía temporal.|es-33,en-8,es-19,en-13,es
+MOS_0207|Incluyendo JPMorgan, Bank of America y Citigroup, anunciaron la suspensión de sus respectivos programas de recompra de acciones propias.|es-11,en-26,es-2,en-11,es-57,en-9,es
+MOS_0208|Hay mucho miedo al contagio hacia los mayores, explica el CEO de Aiudo, Daniel Ibiza.|es-58,en-4,es-10,en-7,es
+MOS_0209|El mercado comercial de flores frescas más grande de Asia, situado en la provincia de Yunnan, suroeste de China, reanudó sus operaciones el veinticuatro de febrero, cuando la provincia redujo su respuesta de emergencia del primer al tercer nivel.|es-31,en-8,es-14,en-6,es-27,en-8,es-12,en-7,es
+MOS_0210|La compañía, controlada por el gigante japonés Panasonic, mantenía hasta ahora su planta de Viladecavalls a medio gas.|es-13,en-11,es-23,en-11,es
+MOS_0211|El Premio Nobel y columnista de 'The New York Times' insiste en que el euro fue un error que causó mucho sufrimiento a España.|es-32,en-9,es-5,en-7,es
+MOS_0212|La cifra actual ya es prácticamente la más elevada de los últimos cinco años.|es-43,en-8,es
+MOS_0213|China Telecom invertirá cuarenta y cinco mil trescientos millones de yuanes en cinco GE este año.|en-14,es-55,en-7,es
+MOS_0214|Otras, como Mercadona, solo mantiene la entrega de pedidos online en Valencia y Barcelona.|es-12,en-11,es-36,en-7,es
+MOS_0215|China es el segundo socio comercial y primer destino de la exportación agroalimentaria argentina.|en-6,es
+MOS_0216|México es el principal receptor de remesas en América Latina.|es-13,en-19,es
+MOS_0217|El plan tiene que tener en el centro la cuestión social, Argentina tiene hoy que redefinir sus prioridades.|es-3,en-5,es-41,en-18,es
+MOS_0218|Es fundamental dedicarse a una causa principal con suma atención, ya es una obligación.|es-37,en-10,es
+MOS_0219|Precisamente, según explica Andrés a Efe en su misión al crucero 'Grand Princess', es importante que los alimentos sean cocinados desde fuera del barco para evitar nuevos contagios desde las cocinas del crucero en cuarentena, una forma de asegurar el control sanitario y salir del bucle de las infecciones.|es-65,en-18,es-168,en-8,es
+MOS_0220|Sin embargo, tanto los partidos que están financiados con dinero público como empresas encargan estos 'trackings' para conocer las tendencias de la última semana de campaña, unas tendencias que pueden ser decisivas para decantar la balanza en las urnas.|es-102,en-12,es-106,en-9,es
+MOS_0221|Carrasquilla habló de las fuentes de financiamiento para apoyar al sector salud y a gente vulnerable.|es-67,en-7,es-16,en
+MOS_0222|El republicano volvió a reclamar que se investigue hasta el último euro de los 'business' con sátrapas saudíes y subrayó que la crisis por la pandemia no puede usarse como cortina de humo para tapar las vergüenzas.|es-79,en-11,es-38,en-7,es-7,en-9,es
+MOS_0223|El Gobierno acude a la industria nacional para salvar el déficit de material sanitario.|es-68,en-9,es
+MOS_0224|El índice Standard and Poor's quinientos aumentó once coma veintinueve puntos, o cero coma cuarenta y siete por ciento, para ubicarse en dos mil cuatrocientos nueve coma treinta y nueve unidades.|es-10,en-20,es-19,en-5,es-5,en-12,es-41,en-8,es

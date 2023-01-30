@@ -1,0 +1,148 @@
+{
+    "train": {
+      "log_interval": 5,
+      "eval_interval": 10000,
+      "seed": 1234,
+      "epochs": 10000,
+      "learning_rate": 2e-4,
+      "betas": [0.8, 0.99],
+      "eps": 1e-9,
+      "batch_size": 32,
+      "fp16_run": true,
+      "lr_decay": 0.999875,
+      "segment_size": 24000,
+      "init_lr_ratio": 1,
+      "warmup_epochs": 0,
+      "c_mel": 45,
+      "stft_lamb": 2.5,
+      "kl_const_coeff": 0.01,
+      "total_step":8000, 
+      "constant_step":1000,
+      "sent_kl": 0.0001,
+      "word_kl":0.0021,
+      "subword_kl": 0.01,
+      "phn_kl": 0.05,
+      "frame_kl": 1.0,
+      "sent_kl_e": 0.005,
+      "word_kl_e":0.05,
+      "subword_kl_e": 0.12,
+      "phn_kl_e": 0.1,
+      "frame_kl_e": 1.0
+    },
+    "data": {
+      "speakerlist":["jiangqiuzai"],
+      "data_path":"./norm_preprocessed_hifi16_bert",
+      "outlier": null,
+      "text_cleaners":[],
+      "max_wav_value": 32768.0,
+      "sampling_rate": 16000,
+      "filter_length": 1024,
+      "hop_length": 200,
+      "win_length": 800,
+      "n_mel_channels": 80,
+      "mel_fmin": 0.0,
+      "mel_fmax": null,
+      "add_blank": true,
+      "n_speakers": 1,
+      "cleaned_text": true
+    },
+    "model": {
+      "inter_channels": {
+           "sent": 192,
+           "word": 192,
+           "subword": 192,
+           "phn": 192,
+           "frame": 192
+       },
+  
+      "hidden_channels": 192,
+      "filter_channels": 768,
+      "n_heads": 2,
+      "n_layers": 6,
+      "kernel_size": 3,
+      "p_dropout": 0.1,
+      "gen": {"noise_dim": 64,
+	      "channel_size": 32,
+	      "dilations": [1, 3, 9, 27],
+	      "strides": [5, 5, 4, 2],
+	      "lReLU_slope": 0.2,
+	      "kpnet_conv_size": 3,
+	      "hop_length": 200
+      },
+      "n_layers_q": 3,
+      "use_spectral_norm": false,
+      "gin_channels": 256
+    },
+    "discriminator":{
+      "mpd": {
+        "periods": [2,3,5,7,11],
+        "kernel_size": 5,
+        "stride": 3,
+        "use_spectral_norm": false,
+        "lReLU_slope": 0.2
+      },
+      "mrd":{
+	"resolutions": "[(1024, 120, 600), (2048, 240, 1200), (512, 50, 240)]",
+        "use_spectral_norm": false,
+        "lReLU_slope": 0.2
+      }
+    },
+    "config": {
+        "n_mel_channels": 80,
+        "n_spec_channels": 513,
+        "max_seq_len": 1000,
+        "deconline":false,
+        "history_decoder":40,
+        "current_decoder":100,
+        "overlap_decoder":20,
+        "encoder_layer": 4,
+        "encoder_head": 2,
+        "encoder_hidden": 256,
+        "predictor_layer": 4,
+        "predictor_head": 2,
+        "predictor_hidden": 256,
+        "from_encoder": true,
+        "fft_conv1d_filter_size": 1024,
+        "fft_conv1d_kernel_size": [9, 1],
+        "dropout": 0.1,
+        
+        "decoder_head": {
+          "sent2word": 2,
+          "word2subword": 2,
+          "subword2phn": 2,
+          "phn2frame": 2
+      },
+        "decoder_hidden": {
+            "sent2word": 256,
+            "word2subword": 256,
+            "subword2phn": 256,
+            "phn2frame": 256      
+        },
+
+        "decoder_layer":{
+            "sent2word": 2,
+            "word2subword": 2,
+            "subword2phn": 3,
+            "phn2frame": 4
+        },
+     
+        "rnn_hidden_size": 64,
+        "num_gmm": 3,
+
+        "variance_predictor_filter_size": 256,
+        "variance_predictor_kernel_size": 3,
+        "variance_embedding_kernel_size": 3,
+        "variance_dropout": 0.5,
+
+        "pooling": "attention",
+        "straight_phn": false,
+        "enc_comb": "nocomb",
+        "residual": false,
+
+        "txt_cond": true,
+        "bert_detach": false,
+        "punc_context": true
+    },
+    "dist_url": "tcp://localhost:54327"
+  }
+  
