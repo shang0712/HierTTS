@@ -3,7 +3,7 @@ HierTTS: Expressive End-to-End Text-to-Waveform using Multi-Scale Hierarchical V
 
 
 
-## train: (The code for data processing is still being sorted out)
+## train:
 bash run.sh
 
 ## infer: 
