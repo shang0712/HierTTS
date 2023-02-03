@@ -10,7 +10,7 @@ In our recent [paper](https://www.mdpi.com/2076-3417/13/2/868), we propose HierT
     <th>HierTTS</th>
   </tr>
   <tr>
-    <td><img src="resources/zeng1-1.png" alt="HierTTS" height="600"></td>
+    <td><img src="resources/zeng1-1.png" alt="HierTTS" height="450"></td>
   </tr>
 </table>
 
