@@ -7,10 +7,10 @@ In our recent [paper](https://www.mdpi.com/2076-3417/13/2/868), we propose HierT
 
 <table style="width:100%">
   <tr>
-    <th>VITS at training</th>
+    <th>HierTTS</th>
   </tr>
   <tr>
-    <td><img src="resources/zeng1.pdf" alt="HierTTS" height="400"></td>
+    <td><img src="resources/zeng1-1.png" alt="HierTTS" height="400"></td>
   </tr>
 </table>
 
