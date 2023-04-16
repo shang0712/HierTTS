@@ -1362,13 +1362,9 @@ class Generator_hifi(torch.nn.Module):
             if 'up_{}'.format(i) in mapping_layers:
                 ret_acts['up_{}'.format(i)] = xs
         #x = F.leaky_relu(x)
-        x = self.conv_post(x)
-        x = torch.tanh(x)
-        x = self.pqmf.synthesis(x)
-        if len(mapping_layers) == 0:
-            return x
-        else:
-            return x, ret_acts
+        y_mb_hat = self.conv_post(x)
+        x = self.pqmf.synthesis(y_mb_hat)
+        return x, y_mb_hat
 
     def remove_weight_norm(self):
         print('Removing weight norm...')
@@ -1379,7 +1375,7 @@ class Generator_hifi(torch.nn.Module):
         remove_weight_norm(self.conv_pre)
         remove_weight_norm(self.conv_post)
     def inference(self, c):
-        audio = self.forward(c)
+        audio, _ = self.forward(c)
         return audio
 
 class DiscriminatorR(torch.nn.Module):
@@ -1513,26 +1509,27 @@ class MultiPeriodDiscriminator(nn.Module):
     def __init__(self, hp):
         super(MultiPeriodDiscriminator, self).__init__()
 
-        #discs = [DiscriminatorS(hp)]
-        discs = [DiscriminatorP(hp, period) for period in hp.mpd.periods]
+        self.resolutions = eval(hp.mrd.resolutions)
+        discs = [DiscriminatorS(hp)]
+        discs = discs + [DiscriminatorP(hp, period) for period in hp.mpd.periods]
+        discs = discs + [DiscriminatorR(hp, resolution) for resolution in self.resolutions]
 
         self.discriminators = nn.ModuleList(discs)
 
-    def forward(self, x):
-        ret = list()
-        for disc in self.discriminators:
-            ret.append(disc(x))
+    def forward(self, y, y_hat):
+        y_d_rs = []
+        y_d_gs = []
+        fmap_rs = []
+        fmap_gs = []
+        for i, d in enumerate(self.discriminators):
+            fmap_r, y_d_r = d(y)
+            fmap_g, y_d_g = d(y_hat)
+            y_d_rs.append(y_d_r)
+            y_d_gs.append(y_d_g)
+            fmap_rs.append(fmap_r)
+            fmap_gs.append(fmap_g)
 
-        return ret  # [(feat, score), (feat, score), (feat, score), (feat, score), (feat, score)]
-
-class Discriminator(nn.Module):
-    def __init__(self, hp):
-        super(Discriminator, self).__init__()
-        self.MRD = MultiResolutionDiscriminator(hp)
-        self.MPD = MultiPeriodDiscriminator(hp)
-
-    def forward(self, x):
-        return self.MRD(x), self.MPD(x)
+        return y_d_rs, y_d_gs, fmap_rs, fmap_gs
 
 class EncCombinerCell(nn.Module):
     def __init__(self, Cin, Cout, type='default'):
@@ -1558,19 +1555,20 @@ class DecCombinerCell(nn.Module):
         if self.method=='nocomb':
           self.conv = ConvNorm(Cin2, Cout, kernel_size=1)
         elif self.method=='add':
-          self.conv_0 = ConvNorm(Cin1, Cin2, kernel_size=1)
-          self.conv = ConvNorm(Cin2, Cout, kernel_size=1)
+          self.conv_0 = ConvNorm(Cin2, Cin1, kernel_size=1)
+          assert Cin1 == Cout
         else:
           self.conv = ConvNorm(Cin1 + Cin2, Cout, kernel_size=1)
 
     def forward(self, x1, x2):
         if self.method=='nocomb':
           out = x2
+          out = self.conv(out)
         elif self.method=='add':
-          out = self.conv_0(x1)+x2
+          out = x1+self.conv_0(x2)
         else:
           out = torch.cat([x1, x2], dim=1)
-        out = self.conv(out)
+          out = self.conv(out)
         return out
 
 class Softplus(torch.autograd.Function):
@@ -1667,8 +1665,8 @@ class SynthesizerTrn(nn.Module):
     self.wav2frame = PosteriorEncoder(spec_channels, inter_channels.frame, hidden_channels, 5, 1, 16, gin_channels=gin_channels)
     self.wav2frame_comb = EncCombinerCell(config.decoder_hidden.phn2frame, hidden_channels, type=self.enc_comb)
     self.wav2frame_proj = GaussProj(hidden_channels, inter_channels.frame)
-    self.frame2wav = Generator(inter_channels.frame, gen, gin_channels)
-    #self.frame2wav = Generator_hifi(gen)
+    #self.frame2wav = Generator(inter_channels.frame, gen, gin_channels)
+    self.frame2wav = Generator_hifi(gen)
     self.frame2wav_comb = DecCombinerCell(config.decoder_hidden.phn2frame, inter_channels.frame, inter_channels.frame, self.dec_comb)
     if n_speakers > 1:
       self.emb_g = nn.Embedding(n_speakers, gin_channels)
@@ -1838,15 +1836,147 @@ class SynthesizerTrn(nn.Module):
     kl_frame = D.kl.kl_divergence(posterior_frame, prior_frame)
     kl_frame = torch.sum(kl_frame*frame_mask, dim=[1,2])/torch.sum(frame_mask, dim=[1,2])
     s = self.frame2wav_comb(s, z_frame)
+   
+    if self.training:
+
+      s_slice, ids_slice = commons.rand_slice_segments(s, y_lengths, self.segment_size)
+
+      o, y_mb_hat = self.frame2wav(s_slice )
+    else:
+      o, y_mb_hat = self.frame2wav(s)
+      ids_slice = None
+
+    return o, y_mb_hat, ids_slice, torch.mean(kl_sent), torch.mean(kl_word), torch.mean(kl_subword),torch.mean(kl_phn),torch.mean(kl_frame), d_loss
+
+  def recon(self, phn, phn_lengths, y, y_lengths, txt, txt_lengths, txt2sub, sid=None, phn2frame_ali_m=None, phn2frame_ali=None, subword2phn_ali_m=None, subword2phn_ali=None, word2subword_ali_m=None, word2subword_ali=None,  sent2word_ali_m=None, sent2word_ali=None, word_lengths=None, sub2sub=None, subword_lengths=None, log_D=None,step=None):
+    frame_mask = torch.unsqueeze(commons.sequence_mask(y_lengths, y.size(2)), 1).to(y.dtype)
+    phn_mask = torch.unsqueeze(commons.sequence_mask(phn_lengths, phn.size(1)), 1).to(y.dtype)
+    subword_mask = torch.unsqueeze(commons.sequence_mask(subword_lengths, torch.max(subword_lengths)), 1).to(y.dtype)
+    word_mask = torch.unsqueeze(commons.sequence_mask(word_lengths, torch.max(word_lengths)), 1).to(y.dtype)
+
+    if self.n_speakers > 1:
+      g = self.emb_g(sid).unsqueeze(-1) # [b, h, 1]
+    else:
+      g = None
+
+    phn_embeded = self.phn_emb(phn, phn_lengths)
+    #text enc
+    txt_embeded = self.txt_emb(txt, torch.ne(txt, 0))[0].detach() if self.bert_detach else self.txt_emb(txt, torch.ne(txt, 0))[0]
+    if self.punc_context:
+        txt_embeded = self.txt_context(txt_embeded.transpose(1,2)).transpose(1,2)
+    txt_embeded = self.skipbymask(txt_embeded, txt2sub)
+    txt_embeded, _, _ = self.length_regulator(txt_embeded, sub2sub, sub2phn=True)
+    txt_embeded = torch.cat([txt_embeded,self.phn_enc(phn_embeded, subword2phn_ali_m).transpose(1,2)],-1)
+    subword_embeded = self.subword_enc(txt_embeded.transpose(1,2))
+    word_embeded = self.word_enc(subword_embeded, word2subword_ali_m)
+    sent_embedded = self.sent_enc(word_embeded, sent2word_ali_m)
+
+    #audio enc
+    frame_reps = self.wav2frame(y, frame_mask, g=g)
+    phn_reps = self.frame2phn_1(self.frame2phn_0(frame_reps), phn2frame_ali_m)
+    subword_reps = self.phn2subword(torch.cat([phn_reps, phn_embeded, torch.sum((~phn2frame_ali_m).float(),2).unsqueeze(1)],1), subword2phn_ali_m) if self.txt_cond else self.phn2subword(phn_reps, subword2phn_ali_m) #subword_ali unnique
+    word_reps = self.subword2word(torch.cat([subword_reps, subword_embeded],1), word2subword_ali_m)
+    sent_reps = self.word2sent(torch.cat([word_reps,word_embeded],1), sent2word_ali_m)
+
+    #sent
+    s = sent_embedded
+    m_sent_p, std_sent_p  = self.sent_proj(s)
+    prior_sent = D.Normal(m_sent_p, std_sent_p)# if self.zero_txt else D.Normal(m_sent_p, std_sent_p)
+
+    #sent2word
+    ftr = self.word2sent_comb(sent_reps, s)
+    m_sent_res, std_sent_res = self.word2sent_proj(ftr)
+    posterior_sent = D.Normal(m_sent_p+m_sent_res, std_sent_p*std_sent_res) if False else D.Normal(m_sent_res, std_sent_res)
+    #z_sent = posterior_sent.rsample()
+    z_sent = prior_sent.rsample()
+    kl_sent = D.kl.kl_divergence(posterior_sent, prior_sent)
+    #kl_sent = torch.sum(kl_sent*x_mask)/torch.sum(x_mask)
+    kl_sent = torch.sum(kl_sent, dim=[1,2])
+    s = self.sent2word_comb(s, z_sent)
+    s = self.sent2word(s, sent2word_ali, condition=word_embeded)
+
+    m_word_p, std_word_p = self.sent2word_proj(s)
+    prior_word = D.Normal(m_word_p, std_word_p)
+
+    #word2subword
+    ftr = self.subword2word_comb(word_reps, s)
+    m_word_res, std_word_res = self.subword2word_proj(ftr)
+    posterior_word = D.Normal(m_word_p+m_word_res,std_word_p*std_word_res) if self.residual else D.Normal(m_word_res, std_word_res)
+    #z_word = posterior_word.rsample()
+    z_word = prior_word.rsample()
+    kl_word = D.kl.kl_divergence(posterior_word, prior_word)
+    kl_word = torch.sum(kl_word*word_mask, dim=[1,2])/torch.sum(word_mask, dim=[1,2])
+    s = self.word2subword_comb(s, z_word)
+    s = self.word2subword(s, word2subword_ali, condition=subword_embeded)
+
+    m_subword_p, std_subword_p = self.word2subword_proj(s)
+    prior_subword = D.Normal(m_subword_p, std_subword_p)
+
+    #subword2phn
+    ftr = self.phn2subword_comb(subword_reps, s) 
+    m_subword_res, std_subword_res = self.phn2subword_proj(ftr)
+    posterior_subword = D.Normal(m_subword_p+m_subword_res,std_subword_p*std_subword_res) if self.residual else D.Normal(m_subword_res, std_subword_res)
+    #z_subword = posterior_subword.rsample()
+    z_subword = prior_subword.rsample()
+    #z_subword = posterior_subword.rsample() if step is None or  step<80000 else prior_subword.rsample()
+    kl_subword = D.kl.kl_divergence(posterior_subword, prior_subword)
+    kl_subword = torch.sum(kl_subword*subword_mask, dim=[1,2])/torch.sum(subword_mask, dim=[1,2])
+    s = self.subword2phn_comb(s, z_subword) 
+    s = self.subword2phn(s, subword2phn_ali, condition=phn_embeded) #subword_ali unnique
+    
+    log_d_predicted = self.dur_linear(s.transpose(1,2)).squeeze(2) #subword_ali unnique
+
+    d_loss = 0
+    #r1 = 1.05
+    for b, src_l in enumerate(phn_lengths):
+        #d_loss += self.mse_loss(log_d_predicted[b, :src_l], (log_D[b, :src_l]+torch.log(torch.ones_like(log_D[b, :src_l])*r1)).detach())
+        d_loss += self.mse_loss(log_d_predicted[b, :src_l], log_D[b, :src_l].detach())
+    d_loss/=phn_lengths.size(0)
+
+    m_phn_p, std_phn_p = self.subword2phn_proj(s)
+    prior_phn = D.Normal(m_phn_p, std_phn_p)
+
+    #phn2frame
+    ftr = self.frame2phn_comb(phn_reps, s)
+    m_phn_res, std_phn_res = self.frame2phn_proj(ftr)
+    posterior_phn = D.Normal(m_phn_p+m_phn_res, std_phn_p*std_phn_res) if self.residual else D.Normal(m_phn_res, std_phn_res)
+    #z_phn = posterior_phn.rsample()
+    z_phn = prior_phn.rsample()
+    #z_phn = posterior_phn.rsample()  if step is None or  step<77000 else prior_phn.rsample()
+    kl_phn = D.kl.kl_divergence(posterior_phn, prior_phn)
+    kl_phn = torch.sum(kl_phn*phn_mask, dim=[1,2])/torch.sum(phn_mask,dim=[1,2])
+    s = self.phn2frame_comb(phn_embeded, z_phn) if self.straight_phn else self.phn2frame_comb(s, z_phn)
+    s = self.phn2frame(s, phn2frame_ali)
+    # s = s.transpose(1,2)
+    # o = self.out(s).transpose(1,2)
+    m_frame_p, std_frame_p = self.phn2frame_proj(s)
+     
+    prior_frame = D.Normal(m_frame_p, std_frame_p)
+
+    #frame2wav
+    ftr = self.wav2frame_comb(frame_reps, s)
+    m_frame_res, std_frame_res = self.wav2frame_proj(ftr)
+    posterior_frame = D.Normal(m_frame_p+m_frame_res, std_frame_p*std_frame_res) if self.residual else D.Normal(m_frame_res, std_frame_res)
+    #z_frame = posterior_frame.rsample()
+    z_frame = prior_frame.rsample()
+    #z_frame = posterior_frame.rsample() if step is None or  step<70000 else prior_frame.rsample()
+    kl_frame = D.kl.kl_divergence(posterior_frame, prior_frame)
+    kl_frame = torch.sum(kl_frame*frame_mask, dim=[1,2])/torch.sum(frame_mask, dim=[1,2])
+    s = self.frame2wav_comb(s, z_frame)
+   
+    if self.training:
+
+      s_slice, ids_slice = commons.rand_slice_segments(s, y_lengths, self.segment_size)
+
+      o, y_mb_hat = self.frame2wav(s_slice )
+    else:
+      o, y_mb_hat = self.frame2wav(s)
+      ids_slice = None
+
+    return o, y_mb_hat, ids_slice, torch.mean(kl_sent), torch.mean(kl_word), torch.mean(kl_subword),torch.mean(kl_phn),torch.mean(kl_frame), d_loss
+
     
 
-    s_slice, ids_slice = commons.rand_slice_segments(s, y_lengths, self.segment_size)
-
-    o = self.frame2wav(s_slice )
-
-    return o, ids_slice, torch.mean(kl_sent), torch.mean(kl_word), torch.mean(kl_subword),torch.mean(kl_phn),torch.mean(kl_frame), d_loss
-
-    
   def emb_infer(self, phn, phn_lengths, y, y_lengths, txt, txt_lengths, txt2sub, sid=None, phn2frame_ali=None, subword2phn_ali=None, word2subword_ali=None, word_lengths=None, sub2sub=None, subword_lengths=None, log_D=None):
     #frame_mask = torch.unsqueeze(commons.sequence_mask(y_lengths, y.size(2)), 1).to(y.dtype)
     phn_mask = torch.unsqueeze(commons.sequence_mask(phn_lengths, phn.size(1)), 1).to(y.dtype)
@@ -2023,9 +2153,9 @@ class SynthesizerTrn(nn.Module):
     phn_mask = torch.unsqueeze(commons.sequence_mask(phn_lengths, torch.max(phn_lengths)), 1).to(phn.dtype)
     subword_mask = torch.unsqueeze(commons.sequence_mask(subword_lengths, torch.max(subword_lengths)), 1).to(phn.dtype)
 
-    temperature = {'sent':0.5,
-                  'word':0.8,
-                  'subword':1,
+    temperature = {'sent':0.0,
+                  'word':0.0,
+                  'subword':0.0,
                   'phn':1,
                   'frame':1}
 
